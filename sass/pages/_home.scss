@@ -2,6 +2,10 @@
     background-color: $color-grey-light-1;
     padding: 35rem 0;
     margin-top: -20vh;
+
+    @include respond(tab-port) {
+        padding: 20rem 0;
+    }
 }
 
 .features {
@@ -20,17 +24,29 @@
     & > * {
         transform: skewY(8deg);
     }
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .tours {
     background-color: $color-grey-light-1;
-    padding: 25rem 0 10rem 0;
+    padding: 25rem 0 15rem 0;
     margin-top: -10rem;
+
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
 }
 
 .stories {
     position: relative;
     padding: 15rem 0;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .booking {
@@ -38,6 +54,10 @@
     background-image: -webkit-linear-gradient(top left, $color-primary-light, $color-primary-dark);
     background-image: -o-linear-gradient(top left, $color-primary-light, $color-primary-dark);
     background-image: linear-gradient(to bottom right, $color-primary-light, $color-primary-dark);
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .book {
